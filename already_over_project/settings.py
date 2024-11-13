@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ALLOWED_HOSTS = [".awsapprunner.com"]
+ALLOWED_HOSTS = [".awsapprunner.com",'127.0.0.1']
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
