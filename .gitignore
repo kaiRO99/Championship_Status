@@ -10,6 +10,7 @@ __pycache__/
 *.pyo
 *.pyd
 db.sqlite3  # If using a SQLite database locally
+media
 *.sqlite3
 
 **/migrations/ 
@@ -17,7 +18,7 @@ db.sqlite3  # If using a SQLite database locally
 .env
 .vscode/
 
-
 static/
+staticfiles
 
 venv/
