@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "base.html"%}
+<!-- base.html, gives consistent look, this overwrites the content block from base.html -->
+{% block title %} laliga{% endblock %} {% block content %}
+<block class="soccertables">
+  {{ html_table|safe }}
+
+</block>
+
+{% endblock %}

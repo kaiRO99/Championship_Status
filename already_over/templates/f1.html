@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% extends "base.html"%}
+<!-- base.html, gives consistent look, this overwrites the content block from base.html -->
+{% block title %} Formula 1 {% endblock %} {% block content %}
+<block class = "f1tables">
+    <table border = "1px">
+        <tr>
+            {%for column in race_data.0%}
+                <th>{{column}}</th>
+            {%endfor%}
+            {%for row in race_data %}
+                <tr>
+                    {%for value in row.values %}
+                        <td>{{value}}</td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+        </tr>
+    </table>
+
+    <table border = "1px">
+        <tr>
+            {%for column in remaining_points_data.0%}
+                <th>{{column}}</th>
+            {%endfor%}
+            {%for row in remaining_points_data %}
+                <tr>
+                    {%for value in row.values %}
+                        <td>{{value}}</td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+        </tr>
+    </table>
+
+    <table border = "1px">
+        <tr>
+            {%for column in drivers_champ_data.0%}
+                <th>{{column}}</th>
+            {%endfor%}
+            {%for row in drivers_champ_data %}
+                <tr>
+                    {%for value in row.values %}
+                        <td>{{value}}</td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+        </tr>
+        
+    </table>
+    
+    <table border = "1px">
+        <tr>
+            {%for column in constructors_champ_data.0%}
+                <th>{{column}}</th>
+            {%endfor%}
+            {%for row in constructors_champ_data %}
+                <tr>
+                    {%for value in row.values %}
+                        <td>{{value}}</td>
+                    {%endfor%}
+                </tr>
+            {%endfor%}
+        </tr>
+    </table>
+        
+</block>
+
+<!-- <p>{{drivers_champ_data}}</p> -->
+{% endblock %}

@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3  # If using a SQLite database locally
+*.sqlite3
+
+**/migrations/ 
+
+.env
+.vscode/
+
+
+static/
+
+venv/
